@@ -24,10 +24,9 @@ public class Ps231019_1 {
             int left = helper(root.left);
             int right = helper(root.right);
 
-            maxDepth = Math.max(maxDepth, left + right);
+            maxDepth = Math.max(maxDepth, left + right); //2 (왼쪽 리프노드 ~ 현재위치 ~ 오른쪽 리프노드)의 길이
 
-            return Math.max(left, right) + 1;
-            // [1,2,null,null,3]에서 현재 root가 2라면, 2의 오른쪽자식노드 3과 2, 2개를 리턴.
+            return Math.max(left, right) + 1; //1 (현재위치 ~ 리프노드) 의 최대 길이
         }
 
     }
