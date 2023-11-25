@@ -23,7 +23,7 @@ public class Ps231124_1 {
 
                 while (cnt < rows * cols) {
 
-                    for (int i = cStart; i < cStart + n; i++) { // 오
+                    for (int i = cStart; i < cStart + n; i++) {
                         if(x < rows && y < cols && x >= 0 && y >= 0) {
                             answer[cnt][0] = x;
                             answer[cnt][1] = y;
@@ -33,7 +33,7 @@ public class Ps231124_1 {
                     }
                     cStart = y;
 
-                    for (int i = rStart; i < rStart + n; i++) { // 밑
+                    for (int i = rStart; i < rStart + n; i++) {
                         if(x < rows && y < cols && x >= 0 && y >= 0) {
                             answer[cnt][0] = x;
                             answer[cnt][1] = y;
@@ -44,7 +44,7 @@ public class Ps231124_1 {
                     rStart = x;
                     n++;
 
-                    for (int i = cStart; i > cStart - n; i--) { // 왼
+                    for (int i = cStart; i > cStart - n; i--) {
                         if(x < rows && y < cols && x >= 0 && y >= 0) {
                             answer[cnt][0] = x;
                             answer[cnt][1] = y;
@@ -54,7 +54,7 @@ public class Ps231124_1 {
                     }
                     cStart = y;
 
-                    for (int i = rStart; i > rStart - n; i--) { // 위
+                    for (int i = rStart; i > rStart - n; i--) {
                         if(x < rows && y < cols && x >= 0 && y >= 0) {
                             answer[cnt][0] = x;
                             answer[cnt][1] = y;
