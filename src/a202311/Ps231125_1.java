@@ -10,10 +10,9 @@ public class Ps231125_1 {
             int n = matrix.length;
             int rowAndColSum = n*(n+1);
 
+            if (n == 1) return matrix[0][0] == 1; // 1
 
-            if (n == 1) return matrix[0][0] == 1;
-
-            for(int i = 0; i < n; i++) {
+            for(int i = 0; i < n; i++) { // 2
                 int[] arr = new int[n+1];
 
                 for(int j = 0; j < n; j++) {
@@ -22,8 +21,7 @@ public class Ps231125_1 {
                 }
             }
 
-
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < n; i++) { // 3
                 int tempSum = 0;
                 for(int j = 0; j < n; j++) {
                     tempSum += (matrix[i][j] + matrix[j][i]);
