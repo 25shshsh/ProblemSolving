@@ -15,11 +15,6 @@ public class Ps231221_1 {
             n /= base;
         }
 
-
-
-
-
-
     }
 
     class Solution {
