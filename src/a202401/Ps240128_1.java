@@ -10,7 +10,7 @@ public class Ps240128_1 {
             ListNode tempHead = head;
             ListNode reverseHead = null;
 
-            while(tempHead != null) { // 1
+            while(tempHead != null) { // 거꾸로
                 ListNode nextNode = tempHead.next;
                 tempHead.next = reverseHead;
                 reverseHead = tempHead;
