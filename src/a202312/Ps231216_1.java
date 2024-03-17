@@ -4,9 +4,9 @@ import java.util.*;
 // https://leetcode.com/problems/find-duplicate-file-in-system/
 public class Ps231216_1 {
     public static void main(String[] args) {
-        // String[] str = {"root/a 1.txt(abcd) 2.txt(efsfgh)","root/c 3.txt(abdfcd)","root/c/d 4.txt(efggdfh)"};
-        //String[] str = {"root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"};
-        String[] str = {"root/a 1.txt(abcd) 2.txt(efsfgh) 3.txt(efsfgh)","root/c 3.txt(abdfcd)","root/c/d 4.txt(efggdfh)"};
+        // String[] str = {"root/a 1.txt(abcd) 2.txt(efsfgh)","root/c 3.txt(abdfcd)","root/c/속성.d 4.txt(efggdfh)"};
+        //String[] str = {"root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/속성.d 4.txt(efgh)", "root 4.txt(efgh)"};
+        String[] str = {"root/a 1.txt(abcd) 2.txt(efsfgh) 3.txt(efsfgh)","root/c 3.txt(abdfcd)","root/c/속성.d 4.txt(efggdfh)"};
         // map 써야한다.
 
         Map<String, List<String>> map = new HashMap<>();
